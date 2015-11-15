@@ -17,19 +17,8 @@ public class Novik_pr {
     public static void main(String[] args) {
 
         List<Sentence> text = new ArrayList();
-        StringBuilder sb = new StringBuilder();
-        try {
-            BufferedReader br = new BufferedReader(new FileReader(fileName));
-            String tmp;
-            while ((tmp = br.readLine()) != null) {
-                sb.append(tmp);
-            }
-            br.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        
-        String[] s = sb.toString().split("\\.");
+        String sb = readFiles(fileName);
+        String[] s = sb.split("\\.");
         for(String str : s){
             text.add(new Sentence(str));
         }
