@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package novik_pr;
 
 import java.io.BufferedReader;
@@ -13,17 +9,11 @@ import java.util.List;
 import java.util.Scanner;
 import resourse.Sentence;
 
-/**
- *
- * @author Tanya
- */
+
 public class Novik_pr {
 
     private static final String fileName = "file.txt";
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
 
         List<Sentence> text = new ArrayList();
