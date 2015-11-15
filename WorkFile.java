@@ -26,17 +26,5 @@ readFiles(String fileName){
         }
 }
 
-writeFiles(String sb)
-{
-FileWriter fw = null;
-		try {
-			fw = new FileWriter("file.html");
-			fw.write(sb);
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-		finally{
-		fw.close();}
-}
 
 }
